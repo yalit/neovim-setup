@@ -8,9 +8,9 @@ vim.keymap.set('n', '<S-Tab>', ':tabprevious<CR>')
 
 -- Add keeymap for saving and quitting
 vim.keymap.set('n', '<C-s>', ':w<CR>')
-vim.keymap.set('i', '<C-s>', ':w<CR>')
+vim.keymap.set('i', '<C-s>', '<Esc>:w<CR>')
 vim.keymap.set('n', '<C-q>', ':q<CR>')
-vim.keymap.set('i', '<C-q>', ':q<CR>')
+vim.keymap.set('i', '<C-q>', '<Esc>:q<CR>')
 vim.keymap.set('n', '<C-S-q>', ':qa!<CR>')
 
 -- Add keymap for lazygit
