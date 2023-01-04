@@ -110,6 +110,10 @@ vim.o.mouse = 'a'
 
 -- Enable break indent
 vim.o.breakindent = true
+--vim.o.autoindent = true
+vim.o.expandtab = true
+vim.o.tabstop = 4
+vim.o.shiftwidth = 4
 
 -- Save undo history
 vim.o.undofile = true
