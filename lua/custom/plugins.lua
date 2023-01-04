@@ -1,4 +1,7 @@
 return function(use)
+  -- Tokyonight scheme
+  use "EdenEast/nightfox.nvim"
+
   -- WhichKey : popup with the combinations possibles for a key typed
   use({
     "folke/which-key.nvim",
