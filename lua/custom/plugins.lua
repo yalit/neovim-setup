@@ -63,4 +63,28 @@ return function(use)
   -- add nice bar visualization for different tabs and buffers
   use 'nvim-tree/nvim-web-devicons'
   use {'romgrk/barbar.nvim', wants = 'nvim-web-devicons'}
+
+  use({
+    'm4xshen/autoclose.nvim',
+  })
+
+  require("autoclose").setup({
+    keys = {
+       ["("] = { escape = false, close = true, pair = "()"},
+       ["["] = { escape = false, close = true, pair = "[]"},
+       ["{"] = { escape = false, close = true, pair = "{}"},
+
+       [">"] = { escape = true, close = false, pair = "<>"},
+       [")"] = { escape = true, close = false, pair = "()"},
+       ["]"] = { escape = true, close = false, pair = "[]"},
+       ["}"] = { escape = true, close = false, pair = "{}"},
+
+       ['"'] = { escape = true, close = true, pair = '""'},
+       ["'"] = { escape = true, close = true, pair = "''"},
+       ["`"] = { escape = true, close = true, pair = "``"},
+    },
+    options = {
+       disabled_filetypes = { },
+    },
+  })
 end

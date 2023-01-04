@@ -84,6 +84,17 @@ _G.packer_plugins = {
     path = "/Users/yannick/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["autoclose.nvim"] = {
+    loaded = true,
+    path = "/Users/yannick/.local/share/nvim/site/pack/packer/start/autoclose.nvim",
+    url = "https://github.com/m4xshen/autoclose.nvim"
+  },
+  ["barbar.nvim"] = {
+    loaded = true,
+    path = "/Users/yannick/.local/share/nvim/site/pack/packer/start/barbar.nvim",
+    url = "https://github.com/romgrk/barbar.nvim",
+    wants = { "nvim-web-devicons" }
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/Users/yannick/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -211,6 +222,12 @@ _G.packer_plugins = {
     path = "/Users/yannick/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["toggleterm.nvim"] = {
+    config = { "\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0" },
+    loaded = true,
+    path = "/Users/yannick/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/Users/yannick/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -235,18 +252,22 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: greyjoy.nvim
-time([[Config for greyjoy.nvim]], true)
-try_loadstring("\27LJ\2\n„\2\0\0\a\0\15\0\0236\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\3\0005\4\6\0005\5\4\0004\6\0\0=\6\5\5=\5\a\4=\4\b\0035\4\n\0005\5\t\0=\5\v\4=\4\f\3B\1\2\0019\1\r\0'\3\a\0B\1\2\0019\1\r\0'\3\14\0B\1\2\1K\0\1\0\rmakefile\19load_extension\15run_groups\tfast\1\0\0\1\3\0\0\fgeneric\rmakefile\15extensions\fgeneric\1\0\0\rcommands\1\0\0\1\0\2\15last_first\2\19output_results\15toggleterm\nsetup\fgreyjoy\frequire\0", "config", "greyjoy.nvim")
-time([[Config for greyjoy.nvim]], false)
--- Config for: nvim-tree.lua
-time([[Config for nvim-tree.lua]], true)
-try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
-time([[Config for nvim-tree.lua]], false)
 -- Config for: which-key.nvim
 time([[Config for which-key.nvim]], true)
 try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14which-key\frequire\0", "config", "which-key.nvim")
 time([[Config for which-key.nvim]], false)
+-- Config for: greyjoy.nvim
+time([[Config for greyjoy.nvim]], true)
+try_loadstring("\27LJ\2\n„\2\0\0\a\0\15\0\0236\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\3\0005\4\6\0005\5\4\0004\6\0\0=\6\5\5=\5\a\4=\4\b\0035\4\n\0005\5\t\0=\5\v\4=\4\f\3B\1\2\0019\1\r\0'\3\a\0B\1\2\0019\1\r\0'\3\14\0B\1\2\1K\0\1\0\rmakefile\19load_extension\15run_groups\tfast\1\0\0\1\3\0\0\fgeneric\rmakefile\15extensions\fgeneric\1\0\0\rcommands\1\0\0\1\0\2\15last_first\2\19output_results\15toggleterm\nsetup\fgreyjoy\frequire\0", "config", "greyjoy.nvim")
+time([[Config for greyjoy.nvim]], false)
+-- Config for: toggleterm.nvim
+time([[Config for toggleterm.nvim]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
+time([[Config for toggleterm.nvim]], false)
+-- Config for: nvim-tree.lua
+time([[Config for nvim-tree.lua]], true)
+try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
+time([[Config for nvim-tree.lua]], false)
 -- Conditional loads
 time([[Conditional loading of telescope-fzf-native.nvim]], true)
   require("packer.load")({"telescope-fzf-native.nvim"}, {}, _G.packer_plugins)
